@@ -72,7 +72,7 @@ module.exports = {
     devServer: {
         https: true,
         contentBase: 'src/front',
-        port: 9000,
+        port: 9001,
         proxy: {
             '/api': {
                 target: 'http://localhost:8888'
