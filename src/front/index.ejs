@@ -40,7 +40,7 @@
         <img src="images/icons-<%= config.currency.tech_name %>/favicon-32x32.png" width="30" height="30" alt="logo">
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
-        <i class="fa fa-navicon"></i>
+        <i class="fas fa-navicon"></i>
     </button>
     <div class="collapse navbar-collapse" id="navbarContent">
         <ul class="navbar-nav">
@@ -56,10 +56,7 @@
             </li>
             <% } %>
             <li class="nav-item">
-                <a class="nav-link" href="#donations">donations</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#network">network</a>
+                <a class="nav-link" href="#social">social</a>
             </li>
         </ul>
     </div>
@@ -111,25 +108,6 @@
     </div>
 </header>
 
-<section id="ads" class="jumbotron jumbotron-fluid">
-    <div class="container">
-        <!--<h2 class="text-center">Ads</h2>-->
-        <h2 class="text-center">3% off with Genesis Mining: kho86F</h2>
-        <div class="text-center">
-            <a href="https://www.genesis-mining.com/a/1527031" target="_blank">
-                <img width="300" height="250" src="images/genesis.gif" title="3% off with Genesis Mining" alt="3% off with Genesis Mining">
-            </a>
-        </div>
-        <% if (false && ads && ads['a-ads.com']) { %>
-        <div class="text-center">
-            <iframe data-aa='<%= ads['a-ads.com'] %>' src='//acceptable.a-ads.com/<%= ads['a-ads.com'] %>?size=Adaptive'
-                    scrolling='no' style='border:0; padding:0;overflow:hidden' allowtransparency='false'
-                    class="rounded"></iframe>
-        </div>
-        <% } %>
-    </div>
-</section>
-
 <section id="servers" class="jumbotron jumbotron-fluid">
     <div class="container-fluid">
         <h2 class="text-center">Pools</h2>
@@ -169,10 +147,10 @@
                     <div class="loader">
                         <div class="made-with lead">
                             made with
-                            <i title="... love ..." class="fa fa-fw fa-heart fa-spin"></i>
+                            <i title="... love ..." class="far fa-fw fa-heart fa-spin"></i>
                             somewhere in
                             <span title="... Switzerland" class="made-with-flag">&nbsp;<i style="color: white;"
-                                                                                          class="fa fa-plus fa-fw"></i>&nbsp;</span>
+                                                                                          class="fas fa-plus fa-fw"></i>&nbsp;</span>
                         </div>
                     </div>
                 </div>
@@ -183,20 +161,20 @@
                     </li>
                     <li class="list-inline-item">
                         <a href="#" class="btn btn-sm btn-dark" name="refreshServers" type="button">
-                            <i class="fa fa-refresh"></i>
+                            <i class="fas fa-sync"></i>
                             refresh
                         </a>
                     </li>
                     <li class="list-inline-item">
                         <a href="https://github.com/tmorin/cryptonote-universal-pool-list/blob/master/doc/add_or_update_your_pool.md" target="_blank" class="btn btn-sm btn-dark" type="button">
-                            <i class="fa fa-code"></i>
+                            <i class="fas fa-code"></i>
                             add or update your pool forking the repo
                         </a>
                     </li>
                     <li class="list-inline-item">
                         <button class="btn btn-sm btn-dark" type="button" data-toggle="modal"
                                 data-target="#requestStep1Dialog">
-                            <i class="fa fa-info-circle"></i>
+                            <i class="fas fa-info-circle"></i>
                             add or update your pool submitting an issue
                         </button>
                     </li>
@@ -216,7 +194,7 @@
                        placeholder="Enter your <%= config.currency.name %> address"/>
                 <span class="input-group-btn">
                     <button class="btn btn-primary" type="submit">
-                        <i class="fa fa-cog"></i>
+                        <i class="fas fa-cog"></i>
                         <span class="text">Check</span>
                     </button>
                 </span>
@@ -230,10 +208,10 @@
                     <tr class="made-with lead">
                         <td>
                             made with
-                            <i title="... love ..." class="fa fa-fw fa-heart fa-spin"></i>
+                            <i title="... love ..." class="fas fa-fw fa-heart fa-spin"></i>
                             somewhere in
                             <span title="... Switzerland" class="made-with-flag">&nbsp;<i style="color: white;"
-                                                                                          class="fa fa-plus fa-fw"></i>&nbsp;</span>
+                                                                                          class="fas fa-plus fa-fw"></i>&nbsp;</span>
                         </td>
                     </tr>
                     </tfoot>
@@ -280,57 +258,55 @@
 </section>
 <% } %>
 
-<section id="donations" class="jumbotron jumbotron-fluid">
+<section id="social" class="jumbotron jumbotron-fluid">
     <div class="container">
-        <h2 class="text-center">Donations are welcome!</h2>
-
-        <% if (donations) { %>
-        <div class="lead">Donation for administration</div>
-        <dl>
-            <%
-                var donationKeys = Object.keys(donations);
-            donationKeys.forEach(function (key) {
-                var address = donations[key];
-            %>
-            <dt><%= key %></dt>
-            <dd style="word-wrap: break-word;"><%= address %></dd>
-            <% }) %>
-        </dl>
-        <% } %>
-
-        <hr class="invisible">
-
-        <div class="lead">Donation for development</div>
-        <dl>
-            <dt>BTC</dt>
-            <dd style="word-wrap: break-word;">13jXtnauRQf4eqXUQmH2MnAHLSp5Wefmjd</dd>
-            <dt>ETH</dt>
-            <dd style="word-wrap: break-word;">0x7256E1fA50C5c27Dd9720cACbaA05DC67c98031e</dd>
-        </dl>
-    </div>
-</section>
-
-<% if (currencies.length > 1) { %>
-<section id="network" class="jumbotron jumbotron-fluid">
-    <div class="container">
-        <h2 class="text-center">Network</h2>
+        <h2 class="text-center">Connect with us!</h2>
         <br>
-        <div class="row text-center">
-            <% currencies.filter(function (c) {return c !== config.currency.tech_name;}).forEach(function (c) { %>
-            <div class="col-sm-6 col-md-4">
-                <a target="_blank" href="https://<%= c %>-pools.morin.io"><%= c %>-pools.morin.io</a>
+        <div class="row">
+            <div class="col-sm text-center">
+                <a target="_blank" href="https://www.facebook.com/lethean.io/">
+                    <i class="fab fa-facebook-f fa-4x"></i>
+                </a>
             </div>
-            <% }); %>
+            <div class="col-sm text-center">
+                <a target="_blank" href="https://medium.com/@letheanVPN">
+                    <i class="fab fa-medium-m fa-4x"></i>
+                </a>
+            </div>
+            <div class="col-sm text-center">
+                <a target="_blank" href="https://discord.gg/6ARhyAc">
+                    <i class="fab fa-discord fa-4x"></i>
+                </a>
+            </div>
+            <div class="col-sm text-center">
+                <a target="_blank" href="https://t.me/letheanVPN">
+                    <i class="fab fa-telegram-plane fa-4x"></i>
+                </a>
+            </div>
+            <div class="col-sm text-center">
+                <a target="_blank" href="https://twitter.com/LetheanVPN">
+                    <i class="fab fa-twitter fa-4x"></i>
+                </a>
+            </div>
+            <div class="col-sm text-center">
+                <a target="_blank" href="https://www.reddit.com/r/Lethean">
+                    <i class="fab fa-reddit fa-4x"></i>
+                </a>
+            </div>
+            <div class="col-sm text-center">
+                <a target="_blank" href="https://bitcointalk.org/index.php?topic=4902692.0">
+                    <i class="fab fa-bitcoin fa-4x"></i>
+                </a>
+            </div>
         </div>
     </div>
 </section>
-<% } %>
 
 <footer class="container">
     <div class="text-center small m-1">
         Powered by
         <a target="_blank" href="https://github.com/tmorin/cryptonote-universal-pool-list">
-            <i class="fa fa-github"></i>
+            <i class="fab fa-github"></i>
             cryptonote-universal-pool-list
         </a>
         <%= htmlWebpackPlugin.options.pkg.version %> open sourced under the

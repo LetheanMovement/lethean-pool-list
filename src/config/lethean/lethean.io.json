@@ -1,0 +1,8 @@
+{
+  "name": "lethean.io",
+  "front": "https://lethean.io/pool/#/home",
+  "back": "https://lethean.io/pool/api",
+  "location": "US",
+  "impl": "nodejs-pool",
+  "disabled": false
+}

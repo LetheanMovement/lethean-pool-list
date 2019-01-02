@@ -1,7 +1,0 @@
-{
-  "name": "intensecoin.com",
-  "front": "http://intensecoin.com/pool/#/home",
-  "back": "http://pool.intensecoin.com:8001",
-  "location": "US",
-  "impl": "nodejs-pool"
-}

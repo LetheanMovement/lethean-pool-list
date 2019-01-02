@@ -1,7 +1,0 @@
-{
-  "name": "itns.baliwae.com",
-  "front": "http://itns.baliwae.com",
-  "back": "http://pool.itns.baliwae.com:8111",
-  "location": "ID",
-  "disabled": true
-}
