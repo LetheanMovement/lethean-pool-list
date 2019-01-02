@@ -3,5 +3,5 @@
   "front": "https://lethean.blockharbor.net/",
   "back": "https://lethean.blockharbor.net/api",
   "location": "US/EU/AS",
-  "impl": "nodejs-pool",
+  "impl": "nodejs-pool"
 }
