@@ -1,0 +1,8 @@
+{
+  "name": "west-pool.org",
+  "front": "https://lethean.west-pool.org/",
+  "back": "https://lethean.west-pool.org/api",
+  "location": "EU",
+  "impl": "nodejs-pool",
+  "disabled": false
+}

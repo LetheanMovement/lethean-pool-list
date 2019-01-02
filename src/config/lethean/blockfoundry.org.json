@@ -1,0 +1,8 @@
+{
+  "name": "blockfoundry.org",
+  "front": "https://lethean.blockfoundry.org/",
+  "back": "https://lethean.blockfoundry.org/api",
+  "location": "US",
+  "impl": "nodejs-pool",
+  "disabled": false
+}
