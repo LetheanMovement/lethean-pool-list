@@ -251,8 +251,9 @@
                 var exchange = exchanges[key];
             %>
             <li class="list-inline-item">
-                <a target="_blank" class="nav-link" href="<%= exchange.url %>">
-                    <img src="<%= exchange.logo %>" alt="<%= key %>"/>
+                <a target="_blank" class="strong nav-link" href="<%= exchange.url %>">
+                    <%= key %>
+                    <!-- <img src="<%= exchange.logo %>" alt="<%= key %>"/> -->
                 </a>
             </li>
             <% }) %>
