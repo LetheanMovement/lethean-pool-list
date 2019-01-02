@@ -1,7 +1,7 @@
 {
   "name": "cryptonote-universal-pool-list",
-  "version": "1.5.0",
-  "description": "The most comprehensive list of cryptonote-universal-pool's instances.",
+  "version": "1.5.1",
+  "description": "The most comprehensive list of cryptonote-universal-pool's instances, designed for Lethean.",
   "private": true,
   "main": "lib/index.js",
   "scripts": {
@@ -11,15 +11,11 @@
     "release:patch": "scripts/release.sh patch",
     "release:minor": "scripts/release.sh minor",
     "w:front": "webpack-dev-server --mode=development --open --hot --inline",
-    "w:back:edc": "CURRENCY=edollar nodemon --watch src --ignore src/front --exec babel-node src/back/index.js",
-    "w:back:itns": "CURRENCY=intensecoin nodemon --watch src --ignore src/front --exec babel-node src/back/index.js",
-    "w:back:xlc": "CURRENCY=leviarcoin nodemon --watch src --ignore src/front --exec babel-node src/back/index.js",
-    "w:back:fno": "CURRENCY=fonero nodemon --watch src --ignore src/front --exec babel-node src/back/index.js",
-    "w:back:sumo": "CURRENCY=sumokoin nodemon --watch src --ignore src/front --exec babel-node src/back/index.js"
+    "w:back:lthn": "CURRENCY=lethean nodemon --watch src --ignore src/front --exec babel-node src/back/index.js"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/tmorin/cryptonote-universal-pool-list.git"
+    "url": "https://github.com/LetheanMovement/lethean-pool-list.git"
   },
   "author": "Thibault Morin",
   "license": "MIT",
