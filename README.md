@@ -223,6 +223,11 @@ Build the production sources
 npm run build
 ```
 
+Build local docker container
+```bash
+docker build -t lethean-pool-list .
+```
+
 Call the deploy script to build and start the updated container.
 ```bash
 scripts/deploy.sh <tech_name> <GITHUB_CLIENT_ID> <GITHUB_CLIENT_SECRET>
