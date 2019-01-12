@@ -1,0 +1,8 @@
+{
+  "name": "fairhash.org",
+  "front": "https://lethean.fairhash.org/",
+  "back": "https://lethean.fairhash.org/api",
+  "location": "DE",
+  "impl": "cryptonote-universal-pool",
+  "disabled": false
+}

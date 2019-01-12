@@ -1,0 +1,8 @@
+{
+  "name": "GNTL",
+  "front": "https://lthn.pool.gntl.co.uk/",
+  "back": "https://lthn.pool.gntl.co.uk/api",
+  "location": "UK",
+  "impl": "nodejs-pool",
+  "disabled": false
+}
