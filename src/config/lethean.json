@@ -29,6 +29,12 @@
     "tradeogre": {
       "logo": "images/logo.tradeogre.png",
       "url": "https://tradeogre.com/exchange/BTC-LTHN"
+    },
+    "bitker": {
+      "url": "https://www.bitker.com/#/bbTrades/lthn_btc"
+    },
+    "tokok": {
+      "url": "https://www.tokok.com/market?symbol=LTHN_BTC"
     }
   },
   "coinmarket": {

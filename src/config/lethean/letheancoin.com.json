@@ -1,0 +1,8 @@
+{
+  "name": "letheancoin.com",
+  "front": "https://pool.letheancoin.com/",
+  "back": "https://pool.letheancoin.com/api",
+  "location": "UK",
+  "impl": "cryptonote-universal-pool",
+  "disabled": false
+}
