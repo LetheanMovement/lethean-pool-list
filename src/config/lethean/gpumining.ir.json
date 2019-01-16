@@ -1,0 +1,8 @@
+{
+  "name": "GNTL",
+  "front": "https://cn.gpumining.ir/lethean/",
+  "back": "https://cn.gpumining.ir/letheanapi",
+  "location": "IR",
+  "impl": "nodejs-pool",
+  "disabled": false
+}
