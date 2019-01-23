@@ -1,0 +1,8 @@
+{
+  "name": "hashvault.pro",
+  "front": "https://lethean.hashvault.pro",
+  "back": "https://lethean.hashvault.pro/api",
+  "location": "RU",
+  "impl": "nodejs-pool",
+  "disabled": false
+}

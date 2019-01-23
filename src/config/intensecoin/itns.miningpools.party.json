@@ -1,7 +1,0 @@
-{
-  "disabled": true,
-  "name": "MiningPools.Party",
-  "front": "http://itns.miningpools.party/",
-  "back": "http://itns.miningpools.party:8111",
-  "location": "EU"
-}

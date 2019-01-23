@@ -1,7 +1,0 @@
-{
-  "name": "ITNS.info",
-  "front": "https://itns.info",
-  "back": "https://api.itns.info",
-  "location": "EU",
-  "disabled": true
-}

@@ -1,9 +1,7 @@
 # cryptonote-universal-pool-list
 
-> The most comprehensive list of [cryptonote-universal-pool]'s instances.
-> Highly inspired by [www.sumopools.com].
+> Lethean Pool List, based on [cryptonote-universal-pool].
 
-[www.sumopools.com]: http://www.sumopools.com
 [cryptonote-universal-pool]: https://github.com/fancoder/cryptonote-universal-pool
 
 ## Basic features
@@ -34,10 +32,10 @@ It is about the mined currency. i.e. the name, symbol etc.
 ```json
 {
   "currency": {
-    "name": "Intense Coin",
-    "short_name": "Intense",
-    "tech_name": "intensecoin",
-    "symbol": "ITNS",
+    "name": "Lethean",
+    "short_name": "Lethean",
+    "tech_name": "lethean",
+    "symbol": "LTHN",
     "difficultyTarget": 120
   }
 }
@@ -54,9 +52,9 @@ Those links are configurable under the *links domain*, like below:
 ```json
 {
   "links": {
-    "intensecoin.com": {
-      "icon": "fa fa-home",
-      "url": "https://intensecoin.com"
+    "lethean.io": {
+      "icon": "fas fa-home",
+      "url": "https://lethean.io"
     }
   }
 }
@@ -64,6 +62,8 @@ Those links are configurable under the *links domain*, like below:
 
 The icon value is in fact the content of a `class` attribute related to an empty tag `<i></i>`.
 So, the content is dedicated for library like [fontawesome.io].
+
+This version of cryptonote-universal-pool-list has been updated to FontAwesome v5. Note that icons using [fontawesome.io] classes (eg. `fa`) now require `fas` or `fab` according to FontAwesome version 5 specs.
 
 [fontawesome.io]: http://fontawesome.io/ 
 
@@ -77,9 +77,9 @@ The key, there `stocks.exchange`, will be the `alt` attribute of the `img` eleme
 ```json
 {
   "exchanges": {
-    "stocks.exchange": {
-      "logo": "images/logo.stocks.exchange.png",
-      "url": "https://stocks.exchange/trade/ITNS/BTC"
+    "stex": {
+      "logo": "images/logo.stex.png",
+      "url": "https://app.stex.com/en/basic-trade/pair/BTC/LTHN/1D"
     }
   }
 }
@@ -93,7 +93,7 @@ Please refer to [coinmarketcap's documentation] for more information.
 ```json
 {
   "coinmarket": {
-    "currency": "intensecoin",
+    "currency": "lethean",
     "base": "USD",
     "secondary": "BTC",
     "ticker": "true",
@@ -114,8 +114,8 @@ Before the footer of the front page, a donations block can be displayed accordin
 ```json
 {
   "donations": {
-    "ITNS": "iz4gonVSZ1AiaxqBy9FZwFLu671VhTcfAjRfWUvmNjNV2K1xSrzr6WCRJHG8ib92rKDWMYLqq8jbU7LZMqbavGir1aCRWLnw4",
-    "BTC": "13jXtnauRQf4eqXUQmH2MnAHLSp5Wefmjd"
+    "ITNS": "iz4 ...",
+    "BTC": "13 ..."
   }
 }
 ```
@@ -180,9 +180,9 @@ The content of a file is a JSON document describing:
 For instance:
 ```json
 {
-  "name": "intensecoin.com",
-  "front": "http://intensecoin.com/pool",
-  "back": "http://45.32.171.89:8111",
+  "name": "lethean.io",
+  "front": "https://lethean.io/pool",
+  "back": "https://lethean.io/pool/api",
   "location": "US"
 }
 ```
@@ -205,17 +205,17 @@ To customize the domain name and SSL configuration, the following environment va
 
 Install the dependencies
 ```bash
-npm run build
+npm install
 ```
 
 Start the back in development mode
 ```bash
-npm run watch:back:<currency symbol lower case>
+npm run w:back:<currency symbol lower case>
 ```
 
 Start the front in development mode
 ```bash
-npm run watch:front
+npm run w:front
 ```
 
 Build the production sources
@@ -223,14 +223,15 @@ Build the production sources
 npm run build
 ```
 
-Call the deploy script to build and start the updated container.
+Build local docker container
 ```bash
-npm run deploy <tech_name> <GITHUB_CLIENT_ID> <GITHUB_CLIENT_SECRET>
+docker build -t lethean-pool-list .
 ```
 
-## Donations
-
-- BTC: `13jXtnauRQf4eqXUQmH2MnAHLSp5Wefmjd`
+Call the deploy script to build and start the updated container.
+```bash
+scripts/deploy.sh <tech_name> <GITHUB_CLIENT_ID> <GITHUB_CLIENT_SECRET>
+```
 
 ## License
 

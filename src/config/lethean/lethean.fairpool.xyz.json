@@ -1,0 +1,8 @@
+{
+  "name": "fairpool.xyz",
+  "front": "https://lethean.fairpool.xyz/",
+  "back": "https://lethean.fairpool.xyz/api",
+  "location": "US/EU",
+  "impl": "cryptonote-universal-pool",
+  "disabled": false
+}

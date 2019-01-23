@@ -6,6 +6,7 @@ import './index.less';
 import {fetchServers} from './servers';
 import {restoreAddress} from './address';
 import './request';
+import '@fortawesome/fontawesome-free/js/all'
 
 $('body').css({'display': 'block'});
 $('[data-toggle="tooltip"]').tooltip();

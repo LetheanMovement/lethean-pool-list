@@ -1,0 +1,59 @@
+{
+  "currency": {
+    "name": "Lethean",
+    "short_name": "Lethean",
+    "tech_name": "lethean",
+    "symbol": "LTHN",
+    "difficultyTarget": 120,
+    "units": 100000000
+  },
+  "links": {
+    "lethean.io": {
+      "icon": "fas fa-home",
+      "url": "https://lethean.io"
+    },
+    "coinmarketcap.com": {
+      "icon": "fas fa-dollar-sign",
+      "url": "https://coinmarketcap.com/currencies/lethean"
+    },
+    "github.com": {
+      "icon": "fab fa-github",
+      "url": "https://github.com/LetheanMovement/lethean"
+    }
+  },
+  "exchanges": {
+    "stex": {
+      "logo": "images/logo.stex.jpg",
+      "url": "https://app.stex.com/en/basic-trade/pair/BTC/LTHN/1D"
+    },
+    "tradeogre": {
+      "logo": "images/logo.tradeogre.png",
+      "url": "https://tradeogre.com/exchange/BTC-LTHN"
+    },
+    "bitker": {
+      "url": "https://www.bitker.com/#/bbTrades/lthn_btc"
+    },
+    "tokok": {
+      "url": "https://www.tokok.com/market?symbol=LTHN_BTC"
+    }
+  },
+  "coinmarket": {
+    "currency": "lethean",
+    "base": "USD",
+    "secondary": "BTC",
+    "ticker": "true",
+    "rank": "true",
+    "marketcap": "true",
+    "volume": "true",
+    "stats": "USD",
+    "statsticker": "false"
+  },
+  "administrator": {
+    "email": "support@lethean.zendesk.com",
+    "request_user": "LetheanMovement",
+    "request_repo": "lethean-pool-list"
+  },
+  "worker": {
+    "interval_ms": 120000
+  }
+}

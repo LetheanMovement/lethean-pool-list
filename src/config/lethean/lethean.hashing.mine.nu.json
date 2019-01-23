@@ -1,0 +1,8 @@
+{
+  "name": "mine.nu",
+  "front": "http://intense.hashing.mine.nu/",
+  "back": "http://hashing.mine.nu:8118",
+  "location": "DE",
+  "impl": "cryptonote-universal-pool",
+  "disabled": false
+}

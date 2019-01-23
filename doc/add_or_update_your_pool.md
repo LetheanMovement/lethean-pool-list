@@ -6,7 +6,7 @@ That means you have to do the change your-self and then submit a pool request.
 ## Fork the repository
 
 The first step is to get the source code.
-From https://github.com/tmorin/cryptonote-universal-pool-list, fork the repository.
+From https://github.com/LetheanMovement/lethean-pool-list, fork the repository.
 Then checkout it locally.
 
 ## Setup environment
@@ -27,11 +27,7 @@ npm run w:back:<currency symbol>
 
 Presently, the currency symbols are:
 
-- edc
-- itns
-- xlc
-- fno
-- sumo
+- lthn
 
 Start the frontend in watching mode:
 
@@ -39,15 +35,11 @@ Start the frontend in watching mode:
 npm run w:front
 ```
 
-Once the page is opened go to https://localhost:9000/<currency name>.html
+Once the page is opened go to https://localhost:9001/<currency name>.html
 
 The currency names are:
 
-- edollar
-- fonero
-- intensecoin
-- leviarcoin
-- sumokoin
+- lethean
 
 ## Apply your change
 

@@ -30,7 +30,7 @@ if (!GITHUB_CLIENT_SECRET) {
 }
 console.log('GITHUB_CLIENT_SECRET', GITHUB_CLIENT_SECRET);
 
-let baseUrl = 'https://localhost:9000';
+let baseUrl = 'https://localhost:9001';
 let homeUrl = `${baseUrl}/${CURRENCY}.html`;
 if (PRODUCTION) {
     baseUrl = process.env.BASE_URL;
