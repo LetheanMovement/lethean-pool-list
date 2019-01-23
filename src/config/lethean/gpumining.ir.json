@@ -1,8 +1,8 @@
 {
-  "name": "GNTL",
+  "name": "gpumining.ir",
   "front": "https://cn.gpumining.ir/lethean/",
-  "back": "https://cn.gpumining.ir/letheanapi",
+  "back": "https://cn.gpumining.ir/letheanapi/",
   "location": "IR",
-  "impl": "nodejs-pool",
+  "impl": "cryptonote-universal-pool",
   "disabled": false
 }
