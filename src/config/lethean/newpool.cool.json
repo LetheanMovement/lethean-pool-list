@@ -1,8 +1,0 @@
-{
-    "name": "newpool.cool",
-    "front": "http://lthn.newpool.cool",
-    "back": "http://lthn.newpool.cool:8117",
-    "location": "NL",
-    "impl": "cryptonote-nodejs-pool",
-    "disabled": false
-}
